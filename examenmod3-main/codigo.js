@@ -12,7 +12,7 @@ function marcar(evt) {
         fotosMarcadas++;
     }
 
-    /*FALLO 3: se modifica value por textContent*/
+    /*FALLO 3: se modifica value por textContent para que devuelva el texto*/
     document.getElementById("marcadas").textContent = fotosMarcadas;
 }
 
