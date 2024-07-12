@@ -1,0 +1,27 @@
+body {
+    /*FALLO 1: Se pone bien de backgroundColor para background-color*/
+    background-color: bisque;
+}
+header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+#fotografias {
+    margin: auto;
+    width: fit-content;
+}
+
+#fotografias img {
+    /*FALLO 2: Se pone bien de inline-bloc para inline-block*/
+    display: inline-block;
+    width: 200px;
+    margin: 20px; /*FALLO 3: Se añade la unidad de medida px al margen*/
+}
+
+footer {
+    margin: auto;
+    width: fit-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}

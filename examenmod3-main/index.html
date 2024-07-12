@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--se añaden las 3 metaetiquetas-->
+    <meta name="author" content="Pilar">
+    <meta name="description" content="Una colección de fotos con paisajes hermosos.">
+    <meta name="keywords" content="fotos, paisajes, naturaleza, belleza">
+
+
+    <title>Examen</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!--FALLO 1: para que se cargue el script después del html se añade defer-->
+    <script src="codigo.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Fotos de paisajes</h1>
+    </header>
+    <main>
+        <!--FALLO 2: se modifica el id para coincida con javascript y css-->
+        <div id="fotografias"> 
+            <!--FALLO 3: se modifica la extension para jpeg para que coincida con la extensión de las imagenes-->   
+            <img src="imagenes/foto1.jpeg" alt="foto1">
+            <img src="imagenes/foto2.jpeg" alt="foto2">
+            <img src="imagenes/foto3.jpeg" alt="foto3">
+            <img src="imagenes/foto4.jpeg" alt="foto4">
+            <img src="imagenes/foto5.jpeg" alt="foto5">
+        </div>
+    </main>
+    <footer>
+        <p>Fotos marcadas: <span id="marcadas">0</span></p>
+    </footer>
+
+<!--FALLO 4: se pone bien la etiqueta de cierre de </boy> para </body>-->
+</body>
+</html>
